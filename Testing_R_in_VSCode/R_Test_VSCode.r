@@ -37,3 +37,4 @@ print(total_vector)
 poker_midweek <- poker_vector[c(1,5)]
 print(poker_midweek)
 
+
