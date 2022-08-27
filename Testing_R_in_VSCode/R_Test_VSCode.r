@@ -36,3 +36,4 @@ print(total_vector)
 # Define a new variable based on a selection
 poker_midweek <- poker_vector[c(1,5)]
 print(poker_midweek)
+
