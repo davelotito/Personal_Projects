@@ -17,6 +17,10 @@ print(roulette_vector)
 
 # The variable days_vector
 days_vector <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+
+names(poker_vector) <- days_vector
+names(roulette_vector) <- days_vector
+
 print(days_vector)
 
 A_vector <- c(1, 2, 3)
@@ -27,3 +31,8 @@ total_vector <- A_vector + B_vector
   
 # Print out total_vector
 print(total_vector)
+
+
+# Define a new variable based on a selection
+poker_midweek <- poker_vector[c(1,5)]
+print(poker_midweek)
