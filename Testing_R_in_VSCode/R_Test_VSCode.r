@@ -1,11 +1,15 @@
-
+######## Create a FOR LOOP ########
 # Create a simple for loop
 for (i in 1:10){
     print('This is a R Studio Test in VSCode :) !')
 }
+
+#################### END ########################
 # Assign vector to variable
 hello <- c(1,2,3)
 print(hello)
+
+######## UNDERSTANDING 1-D VECTORS ########
 
 # Poker winnings from Monday to Friday
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -43,3 +47,24 @@ selection_vector <- poker_vector > 0
 
 # Select from poker_vector these days
 poker_winning_days <- poker_vector[selection_vector]
+
+# Box office Star Wars (in millions!)
+new_hope <- c(460.998, 314.4)
+empire_strikes <- c(290.475, 247.900)
+return_jedi <- c(309.306, 165.8)
+
+
+# Create box_office (combine 3 vectors into 1)
+box_office <- c(new_hope, empire_strikes, return_jedi)
+print(box_office)
+
+
+# Construct star_wars_matrix
+star_wars_matrix <- matrix(box_office, byrow=TRUE, nrow=3)
+print(star_wars_matrix)
+
+
+
+
+
+#################### END ########################
