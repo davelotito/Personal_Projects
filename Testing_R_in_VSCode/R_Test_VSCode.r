@@ -38,3 +38,8 @@ poker_midweek <- poker_vector[c(1,5)]
 print(poker_midweek)
 
 
+# Which days did you make money on poker?
+selection_vector <- poker_vector > 0
+
+# Select from poker_vector these days
+poker_winning_days <- poker_vector[selection_vector]
