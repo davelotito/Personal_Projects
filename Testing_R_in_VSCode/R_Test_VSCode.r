@@ -79,6 +79,9 @@ rownames(star_wars_matrix) <- titles
 # Print out star_wars_matrix
 print(star_wars_matrix)
 
+# Calculate worldwide box office figures
+worldwide_vector <- rowSums(star_wars_matrix)
+print(worldwide_vector)
 
 
 #################### END ########################
