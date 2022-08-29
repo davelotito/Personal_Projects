@@ -84,4 +84,5 @@ worldwide_vector <- rowSums(star_wars_matrix)
 print(worldwide_vector)
 
 
+
 #################### END ########################
