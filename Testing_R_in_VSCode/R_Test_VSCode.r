@@ -63,7 +63,21 @@ print(box_office)
 star_wars_matrix <- matrix(box_office, byrow=TRUE, nrow=3)
 print(star_wars_matrix)
 
+# Construct matrix
+star_wars_matrix <- matrix(c(new_hope, empire_strikes, return_jedi), nrow = 3, byrow = TRUE)
 
+# Vectors region and titles, used for naming
+region <- c("US", "non-US")
+titles <- c("A New Hope", "The Empire Strikes Back", "Return of the Jedi")
+
+# Name the columns with region
+colnames(star_wars_matrix) <- region
+
+# Name the rows with titles
+rownames(star_wars_matrix) <- titles
+
+# Print out star_wars_matrix
+print(star_wars_matrix)
 
 
 
