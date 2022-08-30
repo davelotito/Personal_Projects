@@ -88,7 +88,34 @@ print(worldwide_vector)
 all_wars_matrix <- cbind(star_wars_matrix, worldwide_vector)
 print(all_wars_matrix)
 
+# Total revenue for US and non-US
+total_revenue_vector <- colSums(all_wars_matrix)
+  
+# Print out total_revenue_vector
+print(total_revenue_vector)
 
+### EXAMPLE ###
+all_wars_matrix[1,2] #selects the element at the first row and second column.
+
+# Select the non-US revenue for all movies
+non_us_all <- all_wars_matrix[,2] # Select the non-US revenue for all movies (the entire second column of all_wars_matrix) #nolint
+print(non_us_all)
+
+
+# Average non-US revenue
+mean(non_us_all)
+  
+# Select the non-US revenue for first two movies
+non_us_some <- all_wars_matrix[1:2,2]
+  
+# Average non-US revenue for first two movies
+mean(non_us_some)
+
+# Estimate the visitors
+visitors <- all_wars_matrix / 5 # Divide all_wars_matrix by 5, giving you the number of visitors in millions. Assign the resulting matrix to visitors        #nolint
+  
+# Print the estimate to the console
+print(visitors)
 
 
 
