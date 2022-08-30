@@ -9,7 +9,7 @@ for (i in 1:10){
 hello <- c(1,2,3)
 print(hello)
 
-######## UNDERSTANDING 1-D VECTORS ########
+######## UNDERSTANDING 1-D VECTORS & MATRIX ########
 
 # Poker winnings from Monday to Friday
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -101,6 +101,7 @@ all_wars_matrix[1,2] #selects the element at the first row and second column.
 non_us_all <- all_wars_matrix[,2] # Select the non-US revenue for all movies (the entire second column of all_wars_matrix) #nolint
 print(non_us_all)
 
+#################### END EXAMPLE ########################
 
 # Average non-US revenue
 mean(non_us_all)
@@ -118,5 +119,22 @@ visitors <- all_wars_matrix / 5 # Divide all_wars_matrix by 5, giving you the nu
 print(visitors)
 
 
+# US visitors
+us_visitors <- visitors[,1] # Select first column
+
+# Average number of US visitors
+mean(us_visitors)
 
 #################### END ########################
+
+
+#################### LEARNING ARTHMATIC & FACTORS ########################
+
+# Sex vector
+sex_vector <- c("Male", "Female", "Female", "Male", "Male")
+
+# Convert sex_vector to a factor
+factor_sex_vector <- factor(sex_vector) # The function factor() will encode the vector as a factor (#nolint)
+
+# Print out factor_sex_vector
+print(factor_sex_vector)
