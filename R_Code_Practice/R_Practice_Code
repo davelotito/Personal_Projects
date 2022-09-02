@@ -165,6 +165,17 @@ summary(survey_vector) # The function summary() gives a quick overview of the co
 summary(factor_survey_vector) # The function summary() gives a quick overview of the contents of a variable (#nolint)
 
 
+####### Ordering matrix with factor ######
+
+# Create speed_vector
+speed_vector <- c("medium", "slow", "slow", "medium", "fast")
+
+# Convert speed_vector to ordered factor vector
+factor_speed_vector <- factor(speed_vector, ordered=TRUE, levels = c("slow", "medium", "fast")) #nolint
+
+# Print factor_speed_vector
+factor_speed_vector
+summary(factor_speed_vector)
 
 
 
